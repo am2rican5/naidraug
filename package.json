@@ -29,7 +29,8 @@
         "productName": "Naidraug",
         "appId": "io.github.am2rican5.Naidraug",
         "dmg": {
-            "contents": [{
+            "contents": [
+                {
                     "x": 410,
                     "y": 150,
                     "type": "link",
@@ -123,6 +124,7 @@
         "webpack-merge": "^4.1.1"
     },
     "dependencies": {
+        "axios": "^0.17.1",
         "electron-debug": "^1.4.0",
         "font-awesome": "^4.7.0",
         "history": "^4.7.2",
