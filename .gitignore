@@ -2,3 +2,5 @@ dist/
 node_modules/
 release/
 TEST-jest_junit.xml
+app/main.js
+app/main.js.map
