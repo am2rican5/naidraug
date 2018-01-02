@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from 'electron'
+import { app, webFrame, BrowserWindow } from 'electron'
 declare var __dirname: string
 let mainWindow: Electron.BrowserWindow
 
@@ -15,4 +15,9 @@ function onReady() {
 
 app.on('ready', () => onReady())
 app.on('window-all-closed', () => app.quit())
+
+webFrame.setZoomFactor(1)
+webFrame.setZoomLevelLimits(1, 1)
+webFrame.setVisualZoomLevelLimits(1, 1)
+webFrame.setLayoutZoomLevelLimits(0, 0)
 console.log(`Electron Version ${app.getVersion()}`)
